@@ -80,6 +80,20 @@ function getDayType(day) {
             return "Weekday";
     }
 }
+// console.log(getDayType(Day.Monday));   
+// console.log(getDayType(Day.Sunday));   
+async function squareAsync(n) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (n < 0) {
+                reject(new Error("Negative number not allowed"));
+            }
+            else {
+                resolve(n * n);
+            }
+        }, 1000);
+    });
+}
 // Example Usage:
-console.log(getDayType(Day.Monday)); // Output: "Weekday"
-console.log(getDayType(Day.Sunday)); // Output: "Weekend"
+squareAsync(4).then(console.log).catch(console.error); // Output after 1s: 16
+squareAsync(-3).then(console.log).catch(console.error); // Output: Error: Negative number not allowed
