@@ -46,7 +46,7 @@ class Car extends Vehicle {
   private model: string;
 
   constructor(make: string, year: number, model: string) {
-    super(make, year);  // Calling the parent class constructor
+    super(make, year); 
     this.model = model;
   }
 
@@ -63,3 +63,12 @@ const myCar = new Car("Toyota", 2020, "Corolla");
 
 
 
+function processValue(value: string | number): number {
+  if (typeof value === "string") {
+    return value.length; 
+  } else {
+    return value * 2;  
+  }
+}
+console.log(processValue("hello")); 
+console.log(processValue(10));       
