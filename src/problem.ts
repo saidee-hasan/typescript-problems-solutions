@@ -18,4 +18,11 @@ const books = [
   { title: "Book C", rating: 5.0 }
 ];
 
-console.log(filterByRating(books)); 
+// console.log(filterByRating(books)); 
+
+
+function concatenateArrays<T>(...arrays:T[][]):T[]{
+  return arrays.flat();
+}
+// console.log(concatenateArrays(["a", "b"], ["c"]));       
+// console.log(concatenateArrays([1, 2], [3, 4], [5]));     
