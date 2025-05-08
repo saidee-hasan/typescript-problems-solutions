@@ -1,0 +1,17 @@
+{
+    "name": "typescript-problem-solutions",
+    "version": "1.0.0",
+    "description": "✍️ Blog 1: Difference Between interface and type in TypeScript\r TypeScript offers both interface and type to define the shape of objects. While they are similar, they have key differences and use cases:",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "tsnd --respawn src/solutions.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "ts-node-dev": "^2.0.0",
+      "typescript": "^5.8.3"
+    }
+  }
